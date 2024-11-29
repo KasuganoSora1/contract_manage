@@ -22,6 +22,8 @@ const app = express();
 
 
 // **** Setup **** //
+//set view engine
+app.set('view engine','ejs');
 
 // Basic middleware
 app.use(express.json());
@@ -72,7 +74,11 @@ app.get('/', (_: Request, res: Response) => {
 
 // Redirect to login if not logged in.
 app.get('/users', (_: Request, res: Response) => {
-  return res.sendFile('users.html', { root: viewsDir });
+  //return res.sendFile('users.html', { root: viewsDir });
+  const myname='zlz';
+  return res.render('./users.ejs',{
+    'myname':myname
+  });
 });
 
 
