@@ -1,0 +1,32 @@
+{
+  "code": 0
+  ,"msg": ""
+  ,"count": 2
+  ,"totalRow": {
+    "era": {
+      "tang": "2",
+      "song": "2",
+      "xian": "20"
+    }
+  }
+  ,"data": [{
+    "id": "1"
+    ,"contract_id": "xxxx1"
+    ,"contract_name": "xxxxxx合同"
+    ,"contract_price": 100000
+    ,"contract_time": "2024-01-01"
+    ,"contract_zt": "已付款"
+    ,"contract_address": 100000
+    ,"contract_introduce":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },{
+    "id": "2"
+    ,"contract_id": "xxxx1"
+    ,"contract_name": "xxxxxx合同"
+    ,"contract_price": 100000
+    ,"contract_time": "2024-01-01"
+    ,"contract_zt": "已付款"
+    ,"contract_address": 100000
+    ,"contract_introduce":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  }
+]
+}  

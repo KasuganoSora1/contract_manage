@@ -14,6 +14,7 @@ import EnvVars from '@src/common/EnvVars';
 import HttpStatusCodes from '@src/common/HttpStatusCodes';
 import { RouteError } from '@src/common/classes';
 import { NodeEnvs } from '@src/common/misc';
+import "reflect-metadata"
 
 
 // **** Variables **** //
@@ -75,12 +76,12 @@ app.get('/', (_: Request, res: Response) => {
 // Redirect to login if not logged in.
 app.get('/users', (_: Request, res: Response) => {
   //return res.sendFile('users.html', { root: viewsDir });
-  const myname='zlz';
-  return res.render('./users.ejs',{
-    'myname':myname
-  });
+  return res.render('./users.ejs');
 });
-
+app.get('/list', (_: Request, res: Response) => {
+  //return res.sendFile('users.html', { root: viewsDir });
+  return res.render('./contract_list.ejs');
+});
 
 // **** Export default **** //
 
